@@ -96,94 +96,54 @@ header {
 
 .hero .cta:hover {
   background: #0052a3;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
-/* Sections */
+/* Section Containers */
 section {
   padding: 4rem 0;
 }
 
-section h2 {
-  font-size: 2.25rem;
+.section-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
+  color: #1a1a2e;
   text-align: center;
 }
 
-/* Products */
-.products {
-  background: white;
-}
-
-.products-grid {
+/* Technology */
+.tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
 }
 
-.product-card {
-  background: #f8fafc;
+.feature-card {
+  background: white;
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid #e2e8f0;
-  transition: box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
 }
 
-.product-card:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+.feature-card:hover {
   transform: translateY(-4px);
 }
 
-.product-card h3 {
+.feature-card h3 {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
   color: #1a1a2e;
 }
 
-.product-card p {
-  color: #64748b;
-  margin-bottom: 1rem;
-}
-
-.product-card ul {
-  list-style: none;
-}
-
-.product-card ul li {
-  padding: 0.25rem 0;
-  color: #64748b;
-}
-
-/* Technology */
-.technology {
-  background: #f8fafc;
-}
-
-.tech-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.tech-item {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  border-left: 4px solid #0066cc;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
-}
-
-.tech-item h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: #1a1a2e;
-}
-
-.tech-item p {
+.feature-card p {
   color: #64748b;
   line-height: 1.7;
 }
@@ -287,7 +247,7 @@ section h2 {
     font-size: 1.75rem;
   }
 
-  .products-grid {
+  .tech-grid {
     grid-template-columns: 1fr;
   }
 }
